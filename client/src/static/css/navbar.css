@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem;
+}
+
+.navbar-title {
+    font-weight: 300;
+}
+
+.navbar-logo {
+    display: block;
+    height: 3rem;
+}

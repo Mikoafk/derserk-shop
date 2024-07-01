@@ -1,0 +1,52 @@
+[
+	{
+		"name": "Camiseta Oversize - Jhayco",
+		"price": 60000,
+		"images": [
+			"https://media.discordapp.net/attachments/994294340060987413/1256502906241421372/MODLS-1.png?ex=66810105&is=667faf85&hm=fee950d6195bd40a39332f941a9429e4ed6d00a4b4c1cd2030ab46807fef249b&=&format=webp&quality=lossless&width=408&height=408",
+            "https://media.discordapp.net/attachments/994294340060987413/1256502906752991303/MODLS-2.png?ex=66810105&is=667faf85&hm=326976f0adceffc03e07e101eacd1c8dde4134b1352472b765a02d66087350db&=&format=webp&quality=lossless&width=408&height=408"
+		],
+		"colors": ["White", "Black"],
+		"sizes": ["M", "S", "X", "XL"]
+	},
+	{
+		"name": "Camiseta Oversize - Tupac",
+		"price": 60000,
+		"images": [
+            "https://media.discordapp.net/attachments/994294340060987413/1256502907159707759/MODLS-3.png?ex=66810105&is=667faf85&hm=d894d51d19bed8201b597ce0317a6ac35e7c22e778f3cd05eedb5195f4871b28&=&format=webp&quality=lossless&width=408&height=408",
+            "https://media.discordapp.net/attachments/994294340060987413/1256502907524616243/MODLS-4.png?ex=66810105&is=667faf85&hm=52ecbb23a04e5b7b8bb15b95fa48197c542e8e6e54f97eedead462d737a9d5d8&=&format=webp&quality=lossless&width=408&height=408"
+        ],
+		"colors": ["White", "Black"],
+		"sizes": ["M", "S", "X", "XL"]
+	},
+	{
+		"name": "Camiseta Oversize - Supra",
+		"price": 60000,
+		"images": [
+            "https://media.discordapp.net/attachments/994294340060987413/1256502907835121805/MODLS-5.png?ex=66810105&is=667faf85&hm=9cfeddbe67dcee8eb3456394ba59f8965de1348d04a465b9e596653856c0f4f3&=&format=webp&quality=lossless&width=408&height=408",
+            "https://media.discordapp.net/attachments/994294340060987413/1256502908178923632/MODLS-6.png?ex=66810106&is=667faf86&hm=244ca6a1b674fd0aa815ed3090b950a641b8fac75431c06f2ae8ef82e35fa378&=&format=webp&quality=lossless&width=408&height=408"
+        ],
+		"colors": ["White", "Purple"],
+		"sizes": ["M", "S", "X", "XL"]
+	},
+	{
+		"name": "Camiseta Oversize - GRK",
+		"price": 60000,
+		"images": [
+            "https://media.discordapp.net/attachments/994294340060987413/1256502908501889064/MODLS-7.png?ex=66810106&is=667faf86&hm=ba96e9bfb46e85f0d75c962f127a5fb7a4d79c05d8ee592e47f54ea6fe193399&=&format=webp&quality=lossless&width=408&height=408",
+            "https://media.discordapp.net/attachments/994294340060987413/1256502908812394599/MODLS-8.png?ex=66810106&is=667faf86&hm=4c5bae93932ce625b7ee57bda401072ed917613929bbee1e6ceb07609941e99b&=&format=webp&quality=lossless&width=408&height=408"
+        ],
+		"colors": ["White", "Black"],
+		"sizes": ["M", "S", "X", "XL"]
+	},
+	{
+		"name": "Camiseta Oversize - HxH",
+		"price": 60000,
+		"images": [
+            "https://media.discordapp.net/attachments/994294340060987413/1256502909114253322/MODLS-9.png?ex=66810106&is=667faf86&hm=da854c6fadcbcb18353d15d1957f703c26e0147cc89a85137e0bcc597ed839f7&=&format=webp&quality=lossless&width=408&height=408",
+            "https://media.discordapp.net/attachments/994294340060987413/1256502905909805147/MODLS-10.png?ex=66810105&is=667faf85&hm=304461f350138f101372976e2dd318f5d663781f209aa6da92aee1cb94bc4ab9&=&format=webp&quality=lossless&width=408&height=408"
+        ],
+		"colors": ["White", "Black"],
+		"sizes": ["M", "S", "X", "XL"]
+	}
+]
