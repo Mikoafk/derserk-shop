@@ -7,9 +7,14 @@ import Item from "./Item";
 export default function SectionItems({ icon, name }) {
 	return (
 		<Box>
-			<Box className="mb-10">
-				<Typography variant="h4" fontWeight="bold" fontFamily="Montserrat">
-					<i class={`${icon} mr-3`}></i> {name}
+			<Box className="mb-5 md:mb-10">
+				<Typography
+					variant="h4"
+					fontWeight="bold"
+					fontFamily="Montserrat"
+					sx={{ fontSize: { xs: 17, md: 30 } }}
+				>
+					<i class={`${icon} md:mr-3 mr-1`}></i> {name}
 				</Typography>
 			</Box>
 			<Box className="mb-16">
@@ -21,18 +26,10 @@ export default function SectionItems({ icon, name }) {
 					duration={500}
 					interval={5000}
 				>
-					<Stack direction="row" spacing={2} justifyContent="center">
-						<Item name="Camisa oversize - GRK" price={60000} />
-						<Item name="Camisa oversize - GRK" price={60000} />
-						<Item name="Camisa oversize - GRK" price={60000} />
-						<Item name="Camisa oversize - GRK" price={60000} />
-					</Stack>
-					<Stack direction="row" spacing={2} justifyContent="center">
-						<Item name="Camisa oversize - GRK" price={60000} />
-						<Item name="Camisa oversize - GRK" price={60000} />
-						<Item name="Camisa oversize - GRK" price={60000} />
-						<Item name="Camisa oversize - GRK" price={60000} />
-					</Stack>
+					<Item name="Camisa oversize - GRK" price={60000} />
+					<Item name="Camisa oversize - GRK" price={60000} />
+					<Item name="Camisa oversize - GRK" price={60000} />
+					<Item name="Camisa oversize - GRK" price={60000} />
 				</Carousel>
 			</Box>
 		</Box>

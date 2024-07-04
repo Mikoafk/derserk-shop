@@ -26,7 +26,7 @@ export default function Navbar() {
 							</Box>
 						</Typography>
 					</Box>
-					<Box className="flex mt-5 mb-3">
+					<Box className="mt-5 mb-3" sx={{ display: { xs: "none", md: "flex" } }}>
 						<Button sx={{ display: "block", color: "white", px: 3 }}>Oversize</Button>
                         <Divider orientation="vertical" flexItem />
 						<Button sx={{ display: "block", color: "white", px: 3 }}>Regular</Button>

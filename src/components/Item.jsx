@@ -5,7 +5,7 @@ import Logo from "../static/img/derserk_white.png";
 
 export default function Item({ name, price }) {
 	return (
-		<Card component="a" href="#" className="block w-64">
+		<Card component="a" href="/products/example" className="block w-64">
 			<CardMedia component="img" height="4rem" width="4rem" image={Logo} className="bg-gray-50" />
 			<CardContent className="bg-gray-100">
 				<Box className="w-fit m-auto text-center">
