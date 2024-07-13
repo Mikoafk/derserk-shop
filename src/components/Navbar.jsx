@@ -26,16 +26,8 @@ export default function Navbar() {
 							</Box>
 						</Typography>
 					</Box>
-					<Box className="mt-5 mb-3" sx={{ display: { xs: "none", md: "flex" } }}>
-						<Button sx={{ display: "block", color: "white", px: 3 }}>Oversize</Button>
-                        <Divider orientation="vertical" flexItem />
-						<Button sx={{ display: "block", color: "white", px: 3 }}>Regular</Button>
-                        <Divider orientation="vertical" flexItem />
-						<Button sx={{ display: "block", color: "white", px: 3 }}>Anime</Button>
-                        <Divider orientation="vertical" flexItem />
-						<Button sx={{ display: "block", color: "white", px: 3 }}>Buzos</Button>
-                        <Divider orientation="vertical" flexItem />
-						<Button sx={{ display: "block", color: "white", px: 3 }}>Destacados</Button>
+					<Box className="mt-5 mb-3">
+						<Typography>- Be the one -</Typography>
 					</Box>
 				</Toolbar>
 			</Container>
