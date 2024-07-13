@@ -42,7 +42,7 @@ export default function ItemPage({}) {
 					<Box className="mt-12">
 						<a
 							className="block w-fit mx-auto bg-green-500 rounded-lg py-5 px-10 text-center text-white text-xl"
-							href={`https://api.whatsapp.com/send?phone=+573235217843&text=%C2%A1Hola!%20Quiero%20hacer%20un%20pedido%20de%20${"Camisa Oversize - GRK"}.%20Talla:%20${"S"}.%20Color:%20${"Blanco"}`}
+							href={`https://api.whatsapp.com/send?phone=+573162709840&text=%C2%A1Hola!%20Quiero%20hacer%20un%20pedido%20de%20${"Camisa Oversize - GRK"}.%20Talla:%20${"S"}.%20Color:%20${"Blanco"}`}
 							target="_blank"
 							rel="noopener noreferrer"
 						>
