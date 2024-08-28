@@ -1,36 +1,33 @@
-import { AppBar, Container, Toolbar, Typography, Box, Button, Divider } from "@mui/material";
-import React from "react";
+import Image from "next/image";
+import { Box, Center, Text, HStack, Heading, Divider } from "@chakra-ui/react";
 
-import Logo from "../static/img/derserk_white.png";
-
-export default function Navbar() {
+export function Navbar() {
 	return (
-		<AppBar position="static" color="primary">
-			<Container maxWidth="xl">
-				<Toolbar className="flex flex-col mt-6">
-					<Box>
-						<Typography
-							variant="h6"
-                            fontSize={25}
-							noWrap
-							sx={{
-								display: "inline",
-								width: "fit-content",
-								fontFamily: "Montserrat",
-								m: "0 auto",
-							}}
+		<Box bgColor="black" w="100%" py={6} px={5}>
+			<Center w="100%">
+				<HStack>
+					<Image
+						width={40}
+						height={40}
+						alt="icon derserk"
+						src="/static/img/ICON_DSK_WHITE.png"
+					/>
+					<div>
+						<Heading as="h6" color="white" fontSize={20}>
+							DERSERK
+						</Heading>
+						<Divider />
+						<Text
+							as="span"
+							color="whiteAlpha.800"
+							fontSize={12}
+							fontFamily="sora, sans-serif"
 						>
-							<Box component="a" href="/" className="block m-auto w-fit">
-								D E R<img src={Logo} alt="logo_derserk" className="inline h-9" />E R
-								K
-							</Box>
-						</Typography>
-					</Box>
-					<Box className="mt-5 mb-3">
-						<Typography>- Be the one -</Typography>
-					</Box>
-				</Toolbar>
-			</Container>
-		</AppBar>
+							Be The One
+						</Text>
+					</div>
+				</HStack>
+			</Center>
+		</Box>
 	);
 }
