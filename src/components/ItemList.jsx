@@ -89,7 +89,7 @@ export function ItemList() {
 		);
 
 		setItemsList(result);
-	}, [value, orderFilter]);
+	}, [ITEMS, value, orderFilter]);
 
 	const handleSortFilterChange = (e) => {
 		setOrderFilter(e.target.value);
