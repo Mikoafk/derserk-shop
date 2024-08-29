@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { Box, Center, Text, HStack, Heading, Divider } from "@chakra-ui/react";
+import { Box, Center, Text, HStack, Heading, Divider, Image } from "@chakra-ui/react";
 
 export function Navbar() {
 	return (
@@ -7,8 +6,8 @@ export function Navbar() {
 			<Center w="100%">
 				<HStack>
 					<Image
-						width={40}
-						height={40}
+						w="40px"
+						h="40px"
 						alt="icon derserk"
 						src="/static/img/ICON_DSK_WHITE.png"
 					/>

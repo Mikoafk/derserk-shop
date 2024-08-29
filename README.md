@@ -5,7 +5,7 @@
 <h1 align="center">Derserk - Shop</h1>
 
 > [!NOTE]
-> Esta página fue desarrollada en el contexto de trabajo freelancer. Este repositorio muestra mi experiencia laboral.
+> Esta página fue desarrollada en el contexto de trabajo freelancer. Este repositorio es una muestra de mi experiencia laboral.
 
 ### Caracteristicas
 

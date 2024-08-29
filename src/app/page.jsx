@@ -1,4 +1,4 @@
-import { ItemList } from "@/components/ItemList";
+import { ItemSearch } from "@/components/ItemSearch";
 import { TrendItems } from "@/components/TrendItems";
 import { Box, Center, Heading } from "@chakra-ui/react";
 
@@ -18,7 +18,7 @@ export default function RootPage() {
 				</Center>
 			</Box>
 
-			<ItemList />
+			<ItemSearch />
 		</>
 	);
 }

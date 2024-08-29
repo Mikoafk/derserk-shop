@@ -13,7 +13,7 @@ import {
 	HStack,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import { FaStar, FaStarHalf } from "react-icons/fa6";
+import { FaStar, FaFire } from "react-icons/fa6";
 import { MdAttachMoney } from "react-icons/md";
 
 export function ItemCard({
@@ -25,6 +25,7 @@ export function ItemCard({
 		images: ["https://placeholder.com/230"],
 	},
 	isSkeleton = false,
+	isTrend = false,
 }) {
 	const [loading, setLoading] = useState(true);
 
@@ -74,11 +75,15 @@ export function ItemCard({
 						</HStack>
 					</Skeleton>
 					<Skeleton isLoaded={!loading}>
-						<HStack justifyContent="center" gap={1}>
-							{Array.from({ length: 5 }).map((_, index) => (
-								<FaStar fontSize={12} key={index} />
-							))}
-						</HStack>
+						{isTrend ? (
+							<FaFire color="red" size={20} className="fire-trend" />
+						) : (
+							<HStack justifyContent="center" gap={1}>
+								{Array.from({ length: 5 }).map((_, index) => (
+									<FaStar fontSize={12} key={index} />
+								))}
+							</HStack>
+						)}
 					</Skeleton>
 				</Center>
 			</CardBody>
