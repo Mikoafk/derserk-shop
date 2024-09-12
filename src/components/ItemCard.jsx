@@ -28,6 +28,9 @@ export function ItemCard({
 	isTrend = false,
 }) {
 	const [loading, setLoading] = useState(true);
+	const [previewPhoto, setPreviewPhoto] = useState(
+		data?.images?.length > 0 ? data?.images[0] : null
+	);
 
 	useEffect(() => {
 		if (typeof data != "undefined" && !isSkeleton) {
@@ -36,7 +39,16 @@ export function ItemCard({
 	}, [data, isSkeleton]);
 
 	return (
-		<Card size="sm" borderRadius="sm" borderWidth={1} borderColor="gray.200" boxShadow="none">
+		<Card
+			as="a"
+			href={`https://api.whatsapp.com/send?phone=+573162709840&text=Hola,%20%C2%BFtienen%20disponible%20%22Camisa%20Oversize%20-%20${data?.title}%22?`}
+			target="_blank"
+			size="sm"
+			borderRadius="sm"
+			borderWidth={1}
+			borderColor="gray.200"
+			boxShadow="none"
+		>
 			<Skeleton isLoaded={!loading}>
 				<Image
 					bgColor="gray.50"
@@ -45,7 +57,9 @@ export function ItemCard({
 					objectFit="cover"
 					aspectRatio="230/230"
 					alt={data?.title + " preview image"}
-					src={data?.images?.length > 0 ? data?.images[0] : null}
+					src={previewPhoto}
+					onPointerOver={() => setPreviewPhoto(data?.images[1])}
+					onPointerLeave={() => setPreviewPhoto(data?.images[0])}
 				/>
 			</Skeleton>
 
@@ -58,7 +72,7 @@ export function ItemCard({
 
 				<Skeleton isLoaded={!loading}>
 					<Text fontSize="sm" color="gray.500" mb={2.5}>
-						{data?.color || "Desconocido"} -{" "}
+						Tallas:{" "}
 						{data?.sizes?.length > 0
 							? data?.sizes?.map((size) => size).join(", ")
 							: "Desconocido"}
@@ -75,15 +89,21 @@ export function ItemCard({
 						</HStack>
 					</Skeleton>
 					<Skeleton isLoaded={!loading}>
-						{isTrend ? (
-							<FaFire color="red" size={20} className="fire-trend" />
-						) : (
-							<HStack justifyContent="center" gap={1}>
-								{Array.from({ length: 5 }).map((_, index) => (
-									<FaStar fontSize={12} key={index} />
-								))}
-							</HStack>
-						)}
+						{
+							isTrend ? (
+								<HStack>
+									<Text as="span" fontSize={13} color="red">
+										¡Destacado!
+									</Text>
+									<FaFire color="red" size={20} className="fire-trend" />
+								</HStack>
+							) : null
+							// <HStack justifyContent="center" gap={1}>
+							// 	{Array.from({ length: 5 }).map((_, index) => (
+							// 		<FaStar fontSize={12} key={index} />
+							// 	))}
+							// </HStack>
+						}
 					</Skeleton>
 				</Center>
 			</CardBody>

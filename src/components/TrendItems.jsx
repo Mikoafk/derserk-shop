@@ -1,12 +1,13 @@
 import { ItemCard } from "@/components/ItemCard";
-import { HStack } from "@chakra-ui/react";
+import { ITEMS } from "@/lib/itemList";
+import { SimpleGrid } from "@chakra-ui/react";
 
 export function TrendItems() {
 	return (
-		<HStack h="100%" gap={10} overflow="auto">
-			<ItemCard isTrend />
-			<ItemCard isTrend />
-			<ItemCard isTrend />
-		</HStack>
+		<SimpleGrid minChildWidth={230} h="100%" gap={10} overflow="auto">
+			{ITEMS.filter((i) => i.isTrend).map((item) => (
+				<ItemCard key={item.id} data={item} isTrend />
+			))}
+		</SimpleGrid>
 	);
 }

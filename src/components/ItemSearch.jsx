@@ -1,22 +1,18 @@
 "use client";
 
 import {
-	Text,
 	Stack,
 	Heading,
 	FormControl,
 	FormLabel,
 	Select,
-	RangeSlider,
-	RangeSliderTrack,
-	RangeSliderFilledTrack,
-	RangeSliderThumb,
 	CheckboxGroup,
 	Checkbox,
 	useCheckboxGroup,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { ItemList } from "./ItemList";
+import { ITEMS } from "@/lib/itemList";
 
 const FILTER_SIZES = ["s", "m", "l", "xl"];
 
@@ -29,51 +25,6 @@ const SORTING_MODE = {
 };
 
 export function ItemSearch() {
-	const ITEMS = [
-		{
-			id: 0,
-			title: "Supra",
-			price: 60000,
-			sizes: ["S", "M", "L"],
-			images: ["https://placeholder.com/230"],
-		},
-		{
-			id: 1,
-			title: "HxH",
-			price: 65000,
-			sizes: ["M", "L", "XL"],
-			images: ["https://placeholder.com/230"],
-		},
-		{
-			id: 2,
-			title: "Jhayco",
-			price: 125000,
-			sizes: ["S", "M", "L", "XL"],
-			images: ["https://placeholder.com/230"],
-		},
-		{
-			id: 3,
-			title: "Anime",
-			price: 20000,
-			sizes: ["L", "XL"],
-			images: ["https://placeholder.com/230"],
-		},
-		{
-			id: 4,
-			title: "GRK",
-			price: 70000,
-			sizes: ["S", "M", "L", "XL"],
-			images: ["https://placeholder.com/230"],
-		},
-		{
-			id: 5,
-			title: "Tupac",
-			price: 60000,
-			sizes: ["S", "M", "XL"],
-			images: ["https://placeholder.com/230"],
-		},
-	];
-
 	const [itemsList, setItemsList] = useState([]);
 	const [orderFilter, setOrderFilter] = useState("relevancia");
 	const { value, setValue, getCheckboxProps } = useCheckboxGroup({
@@ -124,25 +75,6 @@ export function ItemSearch() {
 						</Select>
 					</FormControl>
 
-					{/*<FormControl>
-						<FormLabel>Precio</FormLabel>
-						<RangeSlider aria-label={["min", "max"]} defaultValue={[0, 100]}>
-							<RangeSliderTrack>
-								<RangeSliderFilledTrack bg="black" />
-							</RangeSliderTrack>
-							<RangeSliderThumb boxSize={6} index={0}>
-								<Text fontSize="xs" color="gray.600">
-									60k
-								</Text>
-							</RangeSliderThumb>
-							<RangeSliderThumb boxSize={6} index={1}>
-								<Text fontSize="xs" color="gray.600">
-									100k
-								</Text>
-							</RangeSliderThumb>
-						</RangeSlider>
-					</FormControl>*/}
-
 					<FormControl>
 						<FormLabel>Tallas</FormLabel>
 						<CheckboxGroup value={value} onChange={handleSizesFilterChange}>
@@ -155,18 +87,6 @@ export function ItemSearch() {
 							</Stack>
 						</CheckboxGroup>
 					</FormControl>
-
-					{/* <FormControl>
-						<FormLabel>Color</FormLabel>
-						<CheckboxGroup>
-							<Stack flexDir="row" flexWrap="wrap">
-								<Checkbox>S</Checkbox>
-								<Checkbox>M</Checkbox>
-								<Checkbox>L</Checkbox>
-								<Checkbox>XL</Checkbox>
-							</Stack>
-						</CheckboxGroup>
-					</FormControl> */}
 				</Stack>
 			</Stack>
 
